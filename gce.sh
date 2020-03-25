@@ -16,7 +16,8 @@ chmod +x /usr/local/bin/cloud_sql_proxy
 
 # Fetch source code
 export HOME=/root
-git clone -b f_CreateDeployment --single-branch https://github.com/reddtsai/pythonLotteryScraper.git /opt/app
+# git clone -b f_CreateDeployment --single-branch https://github.com/reddtsai/pythonLotteryScraper.git /opt/app
+git clone https://github.com/reddtsai/pythonLotteryScraper.git /opt/app
 
 # Python environment setup
 virtualenv -p python3 /opt/app/gce/env
