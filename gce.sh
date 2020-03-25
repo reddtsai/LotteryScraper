@@ -16,7 +16,7 @@ chmod +x /usr/local/bin/cloud_sql_proxy
 
 # Fetch source code
 export HOME=/root
-git clone https://github.com/reddtsai/pythonLotteryScraper.git /opt/app
+git clone -b f_CreateDeployment --single-branch https://github.com/reddtsai/pythonLotteryScraper.git /opt/app
 
 # Python environment setup
 virtualenv -p python3 /opt/app/gce/env
@@ -28,7 +28,7 @@ source /opt/app/gce/env/bin/activate
 
 # Setup sql_proxy on ystem service
 cp /opt/app/cloud-sql-proxy.service /etc/systemd/system/cloud-sql-proxy.service
-systemctl enable sql_proxy.service
-systemctl start sql_proxy.service
+systemctl enable cloud-sql-proxy.service
+systemctl start cloud-sql-proxy.service
 
 /opt/app/gce/env/bin/python /opt/app/app.py
