@@ -48,5 +48,5 @@ make unittest
 Deploy app to Google Compute Engine
 
 ``` bash
-make unittest
+make deploy
 ```

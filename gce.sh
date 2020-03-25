@@ -31,4 +31,7 @@ cp /opt/app/cloud-sql-proxy.service /etc/systemd/system/cloud-sql-proxy.service
 systemctl enable cloud-sql-proxy.service
 systemctl start cloud-sql-proxy.service
 
+sleep 30
+
+# start app
 /opt/app/gce/env/bin/python /opt/app/app.py
