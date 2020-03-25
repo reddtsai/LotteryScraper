@@ -7,6 +7,8 @@ Sample Python reference scraping application, powered by Microsoft, based on GCP
 ### Requirement
 
 - Python 3
+    - pymysql
+    - beautifulsoup4
 - MySQL
     - table
         ``` sql
@@ -39,4 +41,12 @@ Test scraper module with makefile.
 
 ``` bash
 make unittest
+```
+
+### Deployment
+
+Deploy app to Google Compute Engine
+
+``` bash
+make deploy
 ```
