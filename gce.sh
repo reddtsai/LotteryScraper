@@ -33,8 +33,8 @@ sleep 15
 
 # Scheduling scraper on system service
 cp /opt/app/lotto-scraper.service /etc/systemd/system/lotto-scraper.service
-systemctl enable lotto-scraper.service
-systemctl start lotto-scraper.service
+# systemctl enable lotto-scraper.service
+# systemctl start lotto-scraper.service
 cp /opt/app/lotto-scraper.timer /etc/systemd/system/lotto-scraper.timer
 systemctl enable lotto-scraper.timer
 systemctl start lotto-scraper.timer
