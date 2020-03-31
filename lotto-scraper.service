@@ -2,8 +2,8 @@
 Description=taiwan lottery scarper
 
 [Service]
-WorkingDirectory=opt/app/gce/env/bin
-ExecStart=python /opt/app/app.py
+WorkingDirectory=/opt/app/gce/env/bin
+ExecStart=/opt/app/gce/env/bin/python /opt/app/app.py
 
 [Install]
 WantedBy=multi-user.target
