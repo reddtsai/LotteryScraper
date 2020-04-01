@@ -3,7 +3,7 @@ Description=scheduling taiwan lottery scarper
 
 [Timer]
 OnActiveSec=1m
-OnCalendar=Sun *-*-* 01:00:00
+OnCalendar=*-*-* 01:00:00
 Persistent=true
 Unit=lotto-scraper.service
 
