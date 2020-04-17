@@ -1,8 +1,10 @@
 # Lottery Scraper
 
-Sample Python reference scraping application, powered by Microsoft, based on GCP containers.
+Sample Python reference scraping application, publish in compute engine of GCP.
 
 ## Getting Started
+
+This APP will scraping data from [lotto office website](https://www.taiwanlottery.com.tw/lotto/lotto649/history.aspx) every day.
 
 ### Requirement
 
